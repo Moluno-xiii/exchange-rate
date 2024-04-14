@@ -178,6 +178,7 @@ export interface SelectProps {
     convRate : string[];
     setOnChange : (e: ChangeEvent<HTMLSelectElement>) => void;
     value : number | string;
+    className: string
 
 
 }

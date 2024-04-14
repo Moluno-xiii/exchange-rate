@@ -63,8 +63,8 @@ function App() {
   );
 
   return (
-    <div className="flex h-full w-full justify-center">
-      <div className="container flex w-full flex-col items-center ss:px-2 lg:px-6">
+    <div className="flex h-full w-full justify-center text-lg 2xl:text-4xl text-red-400">
+      <div className="container flex w-full flex-col items-center px-2 lg:px-6">
         <Header />
         <Main
           fromRate={fromRate}
@@ -78,7 +78,7 @@ function App() {
         {isLoading && <Loader />}
         {errorMessage && !isLoading && <ErrorMessage  message = {errorMessage}/>}
         {!isLoading && amount > 0 && <p>
-          {amount} {fromRate} to {toRate} is : {result }
+          {amount} {fromRate} to {toRate} is : {result } {toRate}
           </p>}
           {!isLoading && amount > 0 && <p>
             Conversion rate is : {conversionRate}
